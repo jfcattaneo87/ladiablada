@@ -10,7 +10,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 const NavBar = () => {
 
   return (
-    <div className="main-NavBar">
+    <header className="main-NavBar">
          <AppBar position="static">
         <Toolbar>
           <IconButton edge="start"  color="inherit" aria-label="menu">
@@ -19,10 +19,12 @@ const NavBar = () => {
           <Typography variant="h6">
             La Diablada
           </Typography>
+          <div class= 'container-login'>
           <Button color="inherit">Login</Button>
+          </div>
         </Toolbar>
       </AppBar>
-    </div>
+    </header>
   );
 }
 
