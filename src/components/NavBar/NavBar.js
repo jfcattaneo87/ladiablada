@@ -4,27 +4,29 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+
 
 const NavBar = () => {
 
+    
+
   return (
-    <header className="main-NavBar">
-         <AppBar position="static">
-        <Toolbar>
-          <IconButton edge="start"  color="inherit" aria-label="menu">
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6">
-            La Diablada
-          </Typography>
-          <div class= 'container-login'>
-          <Button color="inherit">Login</Button>
-          </div>
-        </Toolbar>
+         <AppBar position="static" className="main-NavBar">
+            <Toolbar>
+                <div className="container-logo">
+                    <Typography variant="h5">
+                        La Diablada
+                    </Typography>
+                </div>
+                <div className="container-icono-login">
+                    <Button color="inherit">inicio</Button>
+                    <Button color="inherit">about</Button>
+                    <Button color="inherit">products</Button>
+                    <Button color="inherit">Login</Button>
+                    
+                </div>
+            </Toolbar>
       </AppBar>
-    </header>
   );
 }
 
