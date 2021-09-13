@@ -1,5 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
+import NavBar from './components/NavBar/NavBar';
 
 function App() {
   return (
@@ -7,6 +7,7 @@ function App() {
         <p>
           hello world
         </p>
+        <NavBar></NavBar>
     </div>
   );
 }
