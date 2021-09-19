@@ -4,6 +4,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 
@@ -29,7 +30,7 @@ const NavBar = () => {
                 </div>
                 <div className="cart-buttonNav">
                 <Button variant="text">
-                    
+                    <FontAwesomeIcon icon="fas-solid fas-cart-shopping" />
                 </Button>
                 <p>1</p>
                 </div>
