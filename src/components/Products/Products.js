@@ -1,5 +1,6 @@
 import React from "react";
 import ProductoImg from '../../assets/Productos/uno.jpg'
+import './products.css';
 
 
 //Class components funcional
