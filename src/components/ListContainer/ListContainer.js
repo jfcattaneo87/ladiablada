@@ -5,13 +5,12 @@ import Products from "../Products/Products";
 
 
 
-  export default class ListContainer extends React.Component {
-      render(){
-          return(
-              <div>
-                   <Products title="combo 1" price="35.00"/>
-              </div>
-          )
-      }
-  }
-  
+const ListContainer = ({ greeting}) => {
+
+    return <div>{greeting}</div>;
+ 
+ };
+ 
+ 
+ 
+ export default ListContainer
