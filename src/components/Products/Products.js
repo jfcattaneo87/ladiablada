@@ -1,6 +1,6 @@
 import React from "react";
-import ProductoImg from '../../assets/Productos/uno.jpg'
-import './products.css';
+import ProductoImg from '../../assets/Productos/uno.jpg';
+import '../Products/Products.css';
 
 
 //Class components funcional
@@ -13,8 +13,8 @@ const Products = (props) => {
                       <div>
                           <img src={ProductoImg} alt=""/>
                       </div>
-                      <h3>Titulo</h3>
-                      <p>$ 45.00</p>
+                      <h3>{props.title}</h3>
+                      <p>$ {props.price}</p>
                       <button>Comprar</button>
 
                   
