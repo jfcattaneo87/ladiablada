@@ -2,7 +2,7 @@
     width: 20%;
     margin: 25px;
     display: flex;
-    
+    flex-direction: column;
 
 }
 .container-productos div{
