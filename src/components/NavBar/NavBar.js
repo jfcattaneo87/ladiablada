@@ -11,8 +11,6 @@ import Button from '@material-ui/core/Button';
 
 const NavBar = () => {
 
-    
-
   return (
          <AppBar position="static" className="main-NavBar">
             <Toolbar>
@@ -26,10 +24,8 @@ const NavBar = () => {
                     <Button color="inherit">about</Button>
                     <Button color="inherit">products</Button>
                     <Button color="inherit">Login</Button>
-                    
                 </div>
-            </Toolbar>
-           
+            </Toolbar> 
       </AppBar>
       
       
