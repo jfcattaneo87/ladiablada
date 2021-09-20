@@ -1,0 +1,16 @@
+.container-productos{
+    width: 20%;
+    margin: 25px;
+    display: flex;
+    
+
+}
+.container-productos div{
+    width: 100%;
+    
+
+}
+.container-productos img{
+    width: 100%;
+    
+}
