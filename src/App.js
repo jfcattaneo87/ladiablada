@@ -10,7 +10,7 @@ function App() {
     <div className="App">
         <CartWidget/>
         <NavBar/>
-        <ListContainer/>
+        <ListContainer greeting={"Bievenidos"}/>
 
     </div>
   );
