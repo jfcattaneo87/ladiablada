@@ -3,14 +3,10 @@ import './ListContainer.css';
 import Products from "../Products/Products";
 // external components
 
-
-
-const ListContainer = ({ greeting}) => {
-
-    return <div>{greeting}</div>;
- 
- };
- 
- 
- 
- export default ListContainer
+export default function ListContainer(props){
+    return(
+        <div className="List-container" >
+            <Products title="combo 1"price="35"/>
+        </div>
+    )
+}

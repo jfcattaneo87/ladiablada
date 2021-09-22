@@ -25,7 +25,11 @@ const NavBar = () => {
                     <Button color="inherit">about</Button>
                     <Button color="inherit">products</Button>
                     <Button color="inherit">Login</Button>
-                </div>
+                    </div>
+                    <div className="shopping-car">
+                    <CartWidget/>
+                    </div>
+                
             </Toolbar> 
       </AppBar>
       
