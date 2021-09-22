@@ -1,4 +1,6 @@
+import './ItemCount.css';
 import React,{useState} from "react";
+
 
 export default function ItemCount(props) {
     const [Items, setItems] = useState(0)
