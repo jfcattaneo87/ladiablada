@@ -17,7 +17,7 @@ export default function ItemCount(props) {
     }
 
     return(
-        <div>
+        <div className="restas-sumar">
             <button onClick={restar}>-</button>
             {Items}
             <button disabled={disableButton} onClick={onAdd}>+</button>
