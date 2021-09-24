@@ -17,7 +17,7 @@ const Products = (props) => {
                       </div>
                       <h3>{props.title}</h3>
                       <p>$ {props.price}</p>
-                      <ItemCount/>
+                      <ItemCount></ItemCount>
                       <Button>Comprar</Button>
                      
 
