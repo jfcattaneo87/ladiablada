@@ -2,23 +2,40 @@ import './ItemCount.css';
 import React,{useState} from "react";
 
 //export default function ItemCount({ stock, initial }) {   // desestructuras las props
-export default function ItemCount (){
+export default function ItemCount(){
 
-    const [initial, setInitial] = useState(1)
-    const [onAdd, setOnAdd] = useState(5)
+    const [contador, setContador] = useState(1)
+    const [disableButton, setDisableButton] = useState(false)
+    
+  
+  
 
-    const initial = () => setInitial (initial -0);
-    const onAdd = () => setOnAdd (onAdd +1);
-
+    
+    const initial =()=> {
+                if(contador>'1'){
+                    setContador (contador -1)
+                }else{
+                    setDisableButton(true)
+                } 
+            } 
+            
+    const onAdd = () => {
+                if(contador < '5'){
+                    setContador(contador +1)
+                }else{
+                    setDisableButton(true)
+                }
+            }
 
     return(
                <div className="restar-sumar">
-                   <button onClick={initial}>-</button>
-                   <button onClick={onAdd}>+</button> 
+                   <button disabled={disableButton} onClick={initial}>-</button>
+                   <h5>{contador}</h5>
+                   <button disabled={disableButton} onClick={onAdd}>+</button>
               </div> 
                 
             )
-        }
+        }       
 
 
 
@@ -47,4 +64,3 @@ export default function ItemCount (){
 //         </div>
 //     )
 // }
-
