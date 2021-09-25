@@ -1,5 +1,20 @@
-.restar-sumar {
+.container-ItemCount{
+    width: 150px;
     display: flex;
-    justify-content: space-around;
-    /* background-color: #00000082; */
+    flex-direction: column;
+    
 }
+
+
+
+.\restar-sumar {
+    text-decoration: none;
+    
+}
+
+.\button-agregar{
+    
+    background-color: blue;
+
+}
+

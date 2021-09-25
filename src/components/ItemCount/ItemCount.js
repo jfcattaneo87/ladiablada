@@ -1,29 +1,36 @@
 import './ItemCount.css';
 import React,{useState} from "react";
+import Button from '@mui/material/Button';
+
 
 export const ItemCount = ({ stock, initial, onAdd }) => {
     // declaracion de nuestro estado. tiene un nombre declarativo, y un valor inicial igual a initial (1)
-    const [contador, setCounter] = useState(initial);
+    const [contador, setContador] = useState(initial);
 
     const addOne = () => {
         if (contador < stock) {
-          setCounter(contador + 1);
+          setContador(contador + 1);
         }
       };
 
       const removeOne = () => {
         if (contador > initial) {
-          setCounter(contador - 1);
+          setContador (contador - 1);
         }
       };
 
       return (
         // aca un poco de estilo para darle forma
-        <div className="restar-sumar">
-            <Button onClick={removeOne} disabled={counter <= initial}>-</Button>
-            {counter}
-            <Button onClick={addOne} disabled={counter >= stock}>+</Button>
+        <div className="container-ItemCount">
+            <div className="restar-sumar">
+            <Button  ize="small" onClick={removeOne} disabled={contador <= initial}>-</Button>
+            {contador}
+            <Button size="small" onClick={addOne} disabled={contador >= stock}>+</Button>  
+            </div> 
+            <div className="button-agregar"><Button>AGREGAR</Button></div>
         </div>
+          
+        
       );
     };
     
