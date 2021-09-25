@@ -23,7 +23,6 @@ export const ItemCount = ({ stock, initial, onAdd }) => {
             <Button onClick={removeOne} disabled={counter <= initial}>-</Button>
             {counter}
             <Button onClick={addOne} disabled={counter >= stock}>+</Button>
-        
         </div>
       );
     };
