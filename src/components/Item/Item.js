@@ -1,8 +1,7 @@
 import React from 'react';
 import './Item.css'; 
-import imagenes from '../imgenes/uno.jpg';
-import imagenes from '../imgenes/dos.jpg';
-import imagenes from '../imgenes/tres.jpg';
+
+
 
 
 
@@ -10,12 +9,12 @@ import imagenes from '../imgenes/tres.jpg';
 export const Item = ({ item }) => {
   
   return <div className="Item">
-                <div>
-                    <img src={imagenes}/>
+                <div className="item-imagenes">
+                <img src={`../imgenes/${item.img}`}/>
                 </div>
                     <h2>{item.title}</h2>
                     <p>${item.price}</p>    
         </div>;
 };
 
-//<img src={`../img/uno.jpg${item.img}`}/>
+//<img src={`../imgenes/uno.jpg${item.img}`}/>
