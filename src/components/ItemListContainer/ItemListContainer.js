@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './ItemListContainer.css';
+
 import { ItemList } from '../ItemList/ItemList';
 // external components
 
@@ -12,6 +13,7 @@ export const ItemListContainer = () => {
                       title: 'combo 1', 
                       price:'1000', 
                       img:'uno.jpg'},
+                      
   
                       { id: '002',
                       title: 'combo 2', 
@@ -40,5 +42,6 @@ export const ItemListContainer = () => {
   
     
     return <ItemList items={items} />;
+  
   };
   
