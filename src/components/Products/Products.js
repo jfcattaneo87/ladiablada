@@ -1,5 +1,4 @@
 import React from "react";
-import ProductoImg from '../../assets/Productos/uno.jpg';
 import Button from "@material-ui/core/Button";
 import '../Products/Products.css';
 
@@ -12,7 +11,7 @@ const Products = (props) => {
         
                   <div className="container-productos">
                       <div>
-                          <img src={ProductoImg} alt=""/>
+                          <img src="/img/uno.jpg" alt=""/>
                       </div>
                       <h3>{props.title}</h3>
                       <p>$ {props.price}</p>
