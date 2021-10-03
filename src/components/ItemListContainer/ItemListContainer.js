@@ -1,49 +1,67 @@
-import React, { useEffect, useState } from 'react';
-import './ItemListContainer.css';
-
-
-
-import { ItemList } from '../ItemList/ItemList';
-// external components
-
-export const ItemListContainer = () => {
-    const [items, setItems] = useState([]);
-  
-    useEffect(() => {
-      
-      const list = [{ id: '001',
-                      title: 'combo 1', 
-                      price:'1000', 
-                      img:'uno.jpg'},
-                      
-  
-                      { id: '002',
-                      title: 'combo 2', 
-                      price:'2500', 
-                      img:'dos.jpg'},
-  
-                      { id: '003',
-                      title: 'combo 3', 
-                      price:'3450', 
-                      img:'tres.jpg'}
-                    ];
-  
-      
-      const getItems = new Promise((resolve) => {
-        setTimeout(() => {
-          
-          resolve(list);
-        }, 2000);
-      });
-  
-      
-      getItems.then((res) => {
-        setItems(res);
-      });
-    }, []);
+export const list = [
+  {
+    id: "001",
+    title: "combo 1",
+    price: "1000",
+    img: "uno.jpg",
+    category: "combos",
+  },
+  {
+    id: "002",
+    title: "combo 2",
+    price: "2500",
+    img: "uno.jpg",
+    category: "combos",
+  },
+  {
+    id: "004",
+    title: "combo 4",
+    price: "3450",
+    img: "uno.jpg",
+    category: "combos",
+  },
+  {
+    id: "001",
+    title: "combo 1",
+    price: "1000",
+    img: "dos.jpg",
+    category: "bebidas",
+  },
+  {
+    id: "002",
+    title: "combo 2",
+    price: "2500",
+    img: "dos.jpg",
+    category: "bebidas",
+  },
+  {
+    id: "004",
+    title: "combo 4",
+    price: "3450",
+    img: "dos.jpg",
+    category: "bebidas",
+  },
+  {
+    id: "001",
+    title: "combo 1",
+    price: "1000",
+    img: "tres.jpg",
+    category: "complementos",
+  },
+  {
+    id: "002",
+    title: "combo 2",
+    price: "2500",
+    img: "tres.jpg",
+    category: "complementos",
+  },
+  {
+    id: "004",
+    title: "combo 4",
+    price: "3450",
+    img: "tres.jpg",
+    category: "complementos",
+  },
+];
   
     
-    return <ItemList items={items} />;
-  
-  };
-  

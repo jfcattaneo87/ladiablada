@@ -1,0 +1,9 @@
+.Item {
+  display: flex;
+  flex-direction: column;
+}
+
+.item-imagenes img {
+  width: 20vw;
+  height: 40vh;
+}

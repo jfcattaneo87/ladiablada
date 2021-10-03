@@ -1,20 +1,13 @@
 import React from 'react';
-import './Item.css'; 
-
-
-
-
-
+import './Item.css';
+import ItemCount from '../ItemCount/ItemCount.js'; 
+import ItemDetail from '../ItemDetail/ItemDetail.js';
 
 export const Item = ({ item }) => {
-  
-  return <div className="Item">
-                <div className="item-imagenes">
-                <img src={`../imgenes/${item.img}`}/>
-                </div>
-                    <h2>{item.title}</h2>
-                    <p>${item.price}</p>    
-        </div>;
+  return (
+    <div className="Item">
+      <ItemDetail item={item}/>
+      <ItemCount stock={5} initial={1}/>
+    </div>
+  );
 };
-
-//<img src={`../imgenes/uno.jpg${item.img}`}/>

@@ -6,9 +6,12 @@ export const ItemList = ({ items }) => {
 
   return (
     <div className="item-List">
-      {items.map((item) => {
-        return( <Item item={item} />)
+      {items.map((item, index) => {
+        return( 
+          <Item key={index} item={item} />)
         })}
     </div>
   );
 };
+
+export default ItemList;

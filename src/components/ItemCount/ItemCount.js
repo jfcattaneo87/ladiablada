@@ -3,7 +3,8 @@ import React,{useState} from "react";
 import Button from '@mui/material/Button';
 
 
-export const ItemCount = ({ stock, initial, onAdd }) => {
+// export const ItemCount = ({ stock, initial, onAdd }) => {
+export const ItemCount = ({ stock, initial }) => {
     // declaracion de nuestro estado. tiene un nombre declarativo, y un valor inicial igual a initial (1)
     const [contador, setContador] = useState(initial);
 
@@ -23,19 +24,17 @@ export const ItemCount = ({ stock, initial, onAdd }) => {
         // aca un poco de estilo para darle forma
         <div className="container-ItemCount">
             <div className="restar-sumar">
-            <Button  ize="small" onClick={removeOne} disabled={contador <= initial}>-</Button>
-            {contador}
-            <Button size="small" onClick={addOne} disabled={contador >= stock}>+</Button>  
+              <Button size="small" onClick={removeOne} disabled={contador <= initial}>-</Button>
+              {contador}
+              <Button size="small" onClick={addOne} disabled={contador >= stock}>+</Button>  
             </div> 
             <div className="button-agregar"><Button>AGREGAR</Button></div>
-        </div>
-          
-        
+        </div>  
       );
-    };
+  };
     
 
-
+export default ItemCount;
 
 
 
