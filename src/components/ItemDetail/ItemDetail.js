@@ -2,6 +2,7 @@ import React from 'react';
 import './ItemDetail.css';
 
 
+
 const ItemDetail = ({item}) => {
 
   return (
@@ -14,6 +15,7 @@ const ItemDetail = ({item}) => {
             <p>${item.price}</p>
             <p>{item.description}</p>    
       </div>
+      
     </div>
   );
 };
