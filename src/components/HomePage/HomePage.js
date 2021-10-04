@@ -1,15 +1,17 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 
-
+ 
 const HomePage = () => {
 
-    return (
+    
+    return (     
+       
         <Carousel>
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="../imagenes/banner1.jpg"
+            src="holder.js/800x400?text=First slide&bg=373940"
             alt="First slide"
           />
           <Carousel.Caption>

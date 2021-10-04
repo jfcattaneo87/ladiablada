@@ -6,7 +6,7 @@ import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetail
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { list } from './components/ItemListContainer/ItemListContainer.js';
 import HomePage from './components/HomePage/HomePage';
-
+import ItemDetail from  './components/ItemDetail/ItemDetail.js'
 
 const App = () => {
   const [items, setItems] = useState([]);
@@ -23,7 +23,7 @@ const App = () => {
     });
   }, []);
 
-  const categoryInicio = items.filter((item)=> item.category === "inicio");
+  
   const categoryCombo = items.filter((item) => item.category === "combos");
   const categoryComplementos = items.filter((item) => item.category === "complementos");
   const categoryBebidas = items.filter((item) => item.category === "bebidas");
@@ -33,9 +33,9 @@ const App = () => {
       <BrowserRouter>
         <NavBar />
         <Switch>
-        <Route exact path="/"/>
-        <Route exact path="/inicio"/>
-          <HomePage items={categoryInicio}/>
+        <Route exact path="/inicio">
+          <HomePage/>
+          </Route> 
           <Route exact path="/combos">
             <ItemDetailContainer items={categoryCombo} />
           </Route>
@@ -44,6 +44,9 @@ const App = () => {
           </Route>
           <Route exact path="/bebidas">
             <ItemDetailContainer items={categoryBebidas} />
+          </Route>
+          <Route exact path="/itemDetail/:id" >
+            <ItemDetail/>
           </Route>
           <Route path="*">
             <h1>404 NOT FOUND</h1>

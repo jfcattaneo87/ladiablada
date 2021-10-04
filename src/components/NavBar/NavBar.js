@@ -15,24 +15,25 @@ const NavBar = () => {
   return (
     <AppBar position="static" className="main-NavBar">
       <Toolbar>
-        <Link to="/">
+        <Link to="/inicio">
           <div className="container-logo">
             <Typography variant="h5">La Diablada</Typography>
           </div>
         </Link>
         <div className="container-icono-login">
-          <Link style={{ color: "white", outline: "none", marginRight: 5 }} to="/">
+          <Link to="/inicio">
             Inicio
           </Link>
-          <Link style={{ color: "white", outline: "none", marginRight: 5 }} to="/combos">
+          <Link to="/combos/">
             Combos
           </Link>
-          <Link style={{ color: "white", outline: "none", marginRight: 5 }} to="/bebidas">
+          <Link to="/bebidas/">
             Bebidas
           </Link>
-          <Link style={{ color: "white", outline: "none", marginRight: 5  }} to="/complementos">
+          <Link to="/complementos/">
             Complementos
           </Link>
+        
           {/* <Button color="inherit">about</Button>
                     <Button color="inherit">products</Button>
                     <Button color="inherit">Login</Button> */}
