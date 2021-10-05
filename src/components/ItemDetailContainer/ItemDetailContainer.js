@@ -26,8 +26,7 @@ const ItemDetailContainer = () => {
         return (
         <ItemDetail key={index} item={item} />
         )
-      })
-      }
+      })}
     </div>
   );
 };
