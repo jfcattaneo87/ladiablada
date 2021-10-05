@@ -1,17 +1,17 @@
-import React from 'react';
-import { Item } from '../Item/Item';
-import './ItemList.css'; 
+// import React from 'react';
+// import { Item } from '../Item/Item';
+// import './ItemList.css'; 
 
-export const ItemList = ({ items }) => {
+// export const ItemList = ({ items }) => {
 
-  return (
-    <div className="item-List">
-      {items.map((item, index) => {
-        return( 
-          <Item key={index} item={item} />)
-        })}
-    </div>
-  );
-};
+//   return (
+//     <div className="item-List">
+//       {items.map((item, index) => {
+//         return( 
+//           <Item key={index} item={item} />)
+//         })}
+//     </div>
+//   );
+// };
 
-export default ItemList;
+// export default ItemList;
