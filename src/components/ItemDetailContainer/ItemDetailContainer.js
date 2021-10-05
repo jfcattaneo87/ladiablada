@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import ItemDetail from '../ItemDetail/ItemDetail';
 import {list} from '../ItemListContainer/ItemListContainer';
 
+
 const ItemDetailContainer = () => {
     const [items, setItems] = useState([]);
 

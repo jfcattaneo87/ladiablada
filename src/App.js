@@ -15,9 +15,9 @@ const App = () => {
       <BrowserRouter>
         <NavBar />
         <Switch>
-        <Route exact path="/inicio">
-          <HomePage/>
-          </Route> 
+          <Route exact path="/inicio">
+            <HomePage />
+          </Route>
           <Route exact path="/combos">
             <ItemDetailContainer />
           </Route>
@@ -27,8 +27,8 @@ const App = () => {
           <Route exact path="/bebidas">
             <ItemDetailContainer/>
           </Route> */}
-          <Route exact path="/itemDetail/:id" >
-            <ItemDetail/>
+          <Route exact path="/combos/:comboId">
+            <ItemDetail />
           </Route>
           <Route path="*">
             <h1>404 NOT FOUND</h1>
