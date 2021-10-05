@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // import { list } from './components/ItemListContainer/ItemListContainer.js';
 import HomePage from './components/HomePage/HomePage';
 import ItemDetail from  './components/ItemDetail/ItemDetail.js'
+import Item from  './components/Item/Item.js'
 
 const App = () => {
 
@@ -18,18 +19,17 @@ const App = () => {
           <Route exact path="/inicio">
             <HomePage />
           </Route>
-          <Route exact path="/combos">
-            <ItemDetailContainer />
-          </Route>
+          <Route exact path="/category" component={ItemDetailContainer} />
+          <Route exact path="/category/:id" component={Item} />
+          {/* <Route exact path="/comida/:combos/:id" component={ItemDetail} /> */}
           {/* <Route exact path="/complementos">
             <ItemDetailContainer />
           </Route>
           <Route exact path="/bebidas">
             <ItemDetailContainer/>
           </Route> */}
-          <Route exact path="/combos/:comboId">
-            <ItemDetail />
-          </Route>
+            {/* <ItemDetail item={item} key={index}/> */}
+          {/* </Route> */}
           <Route path="*">
             <h1>404 NOT FOUND</h1>
           </Route>
@@ -40,3 +40,32 @@ const App = () => {
 };
 
 export default App;
+
+
+
+
+// export default function App() {
+//   return (
+//     <BrowserRouter>
+//       {/* ACA PODRIA IR EL HEADER */}
+
+//       <Switch>
+//         {/* ver exact */}
+//         <Route exact path="/">
+//           <Home />
+//         </Route>
+//         <Route exact path="/category/:catId">
+//           <Home />
+//         </Route>
+
+//         {/* para mostrar algo si la ruta ingresada no matchea con las anteriores */}
+//         <Route path="*">
+//           {/* para redirigir se usa Redirect, sino pasamos un componente o texto */}
+//           <Redirect to="/" />
+//         </Route>
+//       </Switch>
+
+//       {/* ACA PODRIA IR EL FOOTER */}
+//     </BrowserRouter>
+//   );
+// }

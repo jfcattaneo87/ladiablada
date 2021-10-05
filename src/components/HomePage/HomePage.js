@@ -8,7 +8,7 @@ const HomePage = () => {
     
     return ( 
       <div>
-          <Image src="../assets/imagenes/banner1.jpg" fluid />
+          <Image src="../public/imagenes/banner1.jpg" fluid />
       </div>
     );
   }

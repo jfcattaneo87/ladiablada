@@ -21,18 +21,11 @@ const NavBar = () => {
           </div>
         </Link>
         <div className="container-icono-login">
-          <Link to="/inicio">
-            Inicio
-          </Link>
-          <Link to="/combos/">
-            Combos
-          </Link>
-          <Link to="/bebidas/">
-            Bebidas
-          </Link>
-          <Link to="/complementos/">
-            Complementos
-          </Link>
+          <Link to="/inicio"/>Inicio
+          <Link to="/comida/"/>Comida
+          <Link to="/combos/"/>Combos
+          <Link to="/bebidas/"/> Bebidas
+          <Link to="/complementos/"/>Complementos
         
           {/* <Button color="inherit">about</Button>
                     <Button color="inherit">products</Button>
